@@ -44,7 +44,7 @@ https://github.com/user-attachments/assets/dfff8786-a72c-45c2-9007-fbc271b2b97c
 | WebArena-Verified | Shopping / Shopping Admin，Hard 集 | **98/111（88.3%）** |
 
 按基准自带的评测器判分，全程只用 DeepSeek V4.1 Flash，没有更强的模型兜底。
-两个基准各抽样 10 条运行轨迹（MobileWorld 8 条通过 2 条失败，WebArena 9 条通过 1 条失败）的回放和官方评分见 [benchmarks/](benchmarks/README.md)。
+两个基准各抽样 10 条运行轨迹的回放和官方评分见 [benchmarks/](benchmarks/README.md)。
 
 ## 项目特点
 

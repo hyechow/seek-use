@@ -35,7 +35,7 @@
 
 - **AdjustBrightnessMaximumTask**：agent 认为亮度已经调到最大（回答里写的是 100），评测器读到的是 244/255。
 - **InvoiceReceiptCopyAskUserTask**：agent 在 Download 里找到了唯一符合条件的 invoice_2025_001.pdf，但题目没有说明
-  “专门收录发票的文件夹”叫什么、在哪，它就此停下，说不知道该复制到哪里，没有声称完成；
+  “专门收录发票的文件夹”叫什么、在哪，它就此停下，说不知道该复制到哪里；
   评测器检查到目标文件夹 Documents/expense/invoice 不存在，判 0 分。
 
 ## WebArena-Verified（Shopping / Shopping Admin）：10 条抽样，9 条通过、1 条失败
@@ -86,4 +86,4 @@
 和 agent 自己说“完成”无关。
 
 唯一的失败是 #147：agent 要在 2022 年的订单里找出买过的相框尺寸，在 20 轮规划预算用完时还没查完候选订单，
-它如实回答“未能确认”，没有编造答案；评测器判定为 UNKNOWN_ERROR，没有取到数据，判 0 分。
+评测器判定为 UNKNOWN_ERROR，没有取到数据，判 0 分。
