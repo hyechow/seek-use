@@ -6,7 +6,7 @@ Browser · Android · iPhone · 用 DeepSeek V4.1 Flash 跑通
 
 > **源码整理中，整理完成后开放。** 这里先放介绍、真实运行的回放和基准测试材料。
 
-https://github.com/user-attachments/assets/284cf2f3-ce4e-48c3-a973-786c4c13bcac
+https://github.com/user-attachments/assets/dfff8786-a72c-45c2-9007-fbc271b2b97c
 
 
 在 DeepSeek Harness 里描述一个界面任务，seek-use 在本机的浏览器、Android 或 iPhone 上完成它，交回结果和每一步的证据。
