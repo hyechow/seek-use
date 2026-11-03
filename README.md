@@ -40,10 +40,13 @@ https://github.com/user-attachments/assets/dfff8786-a72c-45c2-9007-fbc271b2b97c
 
 | 基准 | 范围 | 结果 |
 | --- | --- | --- |
-| MobileWorld | Android，GUI-only 子集 | **96/117（82.1%）** |
+| MobileWorld | Android，GUI-only 子集 | **91/117（77.78%）**，[已上官方榜单](https://github.com/Tongyi-MAI/MobileWorld/issues/68) |
 | WebArena-Verified | Shopping / Shopping Admin，Hard 集 | **98/111（88.3%）** |
 
 按基准自带的评测器判分，全程只用 DeepSeek V4.1 Flash，没有更强的模型兜底。
+MobileWorld 的成绩由官方用我们上传的全部轨迹复现，收录在 [MobileWorld 榜单](https://github.com/Tongyi-MAI/MobileWorld)，
+目前在 GUI-only 总榜排第二、Agentic 类第一。预算按规划轮次计（每题 10 到 75 轮不等），GUI 动作次数不设上限，
+一轮规划里可以有多次 GUI 动作。
 两个基准各抽样 10 条运行轨迹的回放和官方评分见 [benchmarks/](benchmarks/README.md)。
 
 ## 项目特点
