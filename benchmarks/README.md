@@ -5,24 +5,27 @@
 
 ## MobileWorld（GUI-only）：10 条抽样，8 条通过、2 条失败
 
+抽样都取自提交到 [MobileWorld 官方榜单](https://github.com/Tongyi-MAI/MobileWorld/issues/68)的那批运行（117 题通过 91 题），
+评分和动作次数与提交的轨迹一致。
+
 | # | 题目 | 官方评分 | 动作 | 用时 | 日期 | 回放 |
 | ---: | --- | --- | ---: | ---: | --- | --- |
 | 1 | CheckDeduplicatedEventsTask | ✅ 1.0 | 8 | 128 秒 | 2026-10-20 | [GIF](mobileworld/01-CheckDeduplicatedEventsTask-pass.gif) |
 | 2 | AdjustFontIconMinimumTask | ✅ 1.0 | 7 | 93 秒 | 2026-10-20 | [GIF](mobileworld/02-AdjustFontIconMinimumTask-pass.gif) |
 | 3 | CheckConferenceAndSendSmsTask2 | ✅ 1.0 | 14 | 227 秒 | 2026-10-24 | [GIF](mobileworld/03-CheckConferenceAndSendSmsTask2-pass.gif) |
-| 4 | CheckInvoiceTask1 | ✅ 1.0 | 2 | 98 秒 | 2026-10-22 | [GIF](mobileworld/04-CheckInvoiceTask1-pass.gif) |
+| 4 | CheckInvoiceTask1 | ❌ 0.0：incorrect. Expected: 104417.7, Got: 105458.05 | 2 | 71 秒 | 2026-10-22 | [GIF](mobileworld/04-CheckInvoiceTask1-fail.gif) |
 | 5 | ReadQwen3PaperTask3 | ✅ 1.0 | 2 | 230 秒 | 2026-10-22 | [GIF](mobileworld/05-ReadQwen3PaperTask3-pass.gif) |
 | 6 | SendWaiverTask | ✅ 1.0 | 10 | 132 秒 | 2026-10-22 | [GIF](mobileworld/06-SendWaiverTask-pass.gif) |
 | 7 | MastodonNewPostTask | ✅ 1.0 | 6 | 125 秒 | 2026-10-24 | [GIF](mobileworld/07-MastodonNewPostTask-pass.gif) |
 | 8 | ChangeWallpaperTask | ✅ 1.0 | 10 | 190 秒 | 2026-10-22 | [GIF](mobileworld/08-ChangeWallpaperTask-pass.gif) |
-| 9 | InvoiceReceiptCopyAskUserTask | ❌ 0.0：Target folder 'Documents/expense/invoice' does not exist | 4 | 196 秒 | 2026-10-24 | [GIF](mobileworld/09-InvoiceReceiptCopyAskUserTask-fail.gif) |
-| 10 | AdjustBrightnessMaximumTask | ❌ 0.0：Brightness is not at maximum level, current: 244/255 | 4 | 94 秒 | 2026-10-11 | [GIF](mobileworld/10-AdjustBrightnessMaximumTask-fail.gif) |
+| 9 | InvoiceReceiptCopyAskUserTask | ❌ 0.0：Expected 2 files in folder, found 1 | 39 | 463 秒 | 2026-10-21 | [GIF](mobileworld/09-InvoiceReceiptCopyAskUserTask-fail.gif) |
+| 10 | AdjustBrightnessMaximumTask | ✅ 1.0 | 5 | 84 秒 | 2026-10-28 | [GIF](mobileworld/10-AdjustBrightnessMaximumTask-pass.gif) |
 
 点图看大图（✅ 和 ❌ 是官方评测结果）：
 
 <table>
-<tr><td align="center" valign="top" width="20%"><a href="mobileworld/01-CheckDeduplicatedEventsTask-pass.gif"><img src="mobileworld/01-CheckDeduplicatedEventsTask-pass.gif" width="170" alt="CheckDeduplicatedEventsTask"></a><br><sub>✅ CheckDeduplicatedEventsTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/02-AdjustFontIconMinimumTask-pass.gif"><img src="mobileworld/02-AdjustFontIconMinimumTask-pass.gif" width="170" alt="AdjustFontIconMinimumTask"></a><br><sub>✅ AdjustFontIconMinimumTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/03-CheckConferenceAndSendSmsTask2-pass.gif"><img src="mobileworld/03-CheckConferenceAndSendSmsTask2-pass.gif" width="170" alt="CheckConferenceAndSendSmsTask2"></a><br><sub>✅ CheckConferenceAndSendSmsTask2</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/04-CheckInvoiceTask1-pass.gif"><img src="mobileworld/04-CheckInvoiceTask1-pass.gif" width="170" alt="CheckInvoiceTask1"></a><br><sub>✅ CheckInvoiceTask1</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/05-ReadQwen3PaperTask3-pass.gif"><img src="mobileworld/05-ReadQwen3PaperTask3-pass.gif" width="170" alt="ReadQwen3PaperTask3"></a><br><sub>✅ ReadQwen3PaperTask3</sub></td></tr>
-<tr><td align="center" valign="top" width="20%"><a href="mobileworld/06-SendWaiverTask-pass.gif"><img src="mobileworld/06-SendWaiverTask-pass.gif" width="170" alt="SendWaiverTask"></a><br><sub>✅ SendWaiverTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/07-MastodonNewPostTask-pass.gif"><img src="mobileworld/07-MastodonNewPostTask-pass.gif" width="170" alt="MastodonNewPostTask"></a><br><sub>✅ MastodonNewPostTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/08-ChangeWallpaperTask-pass.gif"><img src="mobileworld/08-ChangeWallpaperTask-pass.gif" width="170" alt="ChangeWallpaperTask"></a><br><sub>✅ ChangeWallpaperTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/09-InvoiceReceiptCopyAskUserTask-fail.gif"><img src="mobileworld/09-InvoiceReceiptCopyAskUserTask-fail.gif" width="170" alt="InvoiceReceiptCopyAskUserTask"></a><br><sub>❌ InvoiceReceiptCopyAskUserTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/10-AdjustBrightnessMaximumTask-fail.gif"><img src="mobileworld/10-AdjustBrightnessMaximumTask-fail.gif" width="170" alt="AdjustBrightnessMaximumTask"></a><br><sub>❌ AdjustBrightnessMaximumTask</sub></td></tr>
+<tr><td align="center" valign="top" width="20%"><a href="mobileworld/01-CheckDeduplicatedEventsTask-pass.gif"><img src="mobileworld/01-CheckDeduplicatedEventsTask-pass.gif" width="170" alt="CheckDeduplicatedEventsTask"></a><br><sub>✅ CheckDeduplicatedEventsTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/02-AdjustFontIconMinimumTask-pass.gif"><img src="mobileworld/02-AdjustFontIconMinimumTask-pass.gif" width="170" alt="AdjustFontIconMinimumTask"></a><br><sub>✅ AdjustFontIconMinimumTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/03-CheckConferenceAndSendSmsTask2-pass.gif"><img src="mobileworld/03-CheckConferenceAndSendSmsTask2-pass.gif" width="170" alt="CheckConferenceAndSendSmsTask2"></a><br><sub>✅ CheckConferenceAndSendSmsTask2</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/04-CheckInvoiceTask1-fail.gif"><img src="mobileworld/04-CheckInvoiceTask1-fail.gif" width="170" alt="CheckInvoiceTask1"></a><br><sub>❌ CheckInvoiceTask1</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/05-ReadQwen3PaperTask3-pass.gif"><img src="mobileworld/05-ReadQwen3PaperTask3-pass.gif" width="170" alt="ReadQwen3PaperTask3"></a><br><sub>✅ ReadQwen3PaperTask3</sub></td></tr>
+<tr><td align="center" valign="top" width="20%"><a href="mobileworld/06-SendWaiverTask-pass.gif"><img src="mobileworld/06-SendWaiverTask-pass.gif" width="170" alt="SendWaiverTask"></a><br><sub>✅ SendWaiverTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/07-MastodonNewPostTask-pass.gif"><img src="mobileworld/07-MastodonNewPostTask-pass.gif" width="170" alt="MastodonNewPostTask"></a><br><sub>✅ MastodonNewPostTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/08-ChangeWallpaperTask-pass.gif"><img src="mobileworld/08-ChangeWallpaperTask-pass.gif" width="170" alt="ChangeWallpaperTask"></a><br><sub>✅ ChangeWallpaperTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/09-InvoiceReceiptCopyAskUserTask-fail.gif"><img src="mobileworld/09-InvoiceReceiptCopyAskUserTask-fail.gif" width="170" alt="InvoiceReceiptCopyAskUserTask"></a><br><sub>❌ InvoiceReceiptCopyAskUserTask</sub></td><td align="center" valign="top" width="20%"><a href="mobileworld/10-AdjustBrightnessMaximumTask-pass.gif"><img src="mobileworld/10-AdjustBrightnessMaximumTask-pass.gif" width="170" alt="AdjustBrightnessMaximumTask"></a><br><sub>✅ AdjustBrightnessMaximumTask</sub></td></tr>
 </table>
 
 动作是实际执行成功的设备操作次数，用时是整条运行的耗时。GIF 里每一帧是一步，底部的文字是模型对这一步的说明
@@ -33,10 +36,10 @@
 由 MobileWorld 后端的 `/task/eval` 按设备和应用的最终状态判定，和 agent 自己说“完成”无关。
 两条失败的运行里，评测器给的理由是上表“官方评分”一列，agent 自己的说法是：
 
-- **AdjustBrightnessMaximumTask**：agent 认为亮度已经调到最大（回答里写的是 100），评测器读到的是 244/255。
-- **InvoiceReceiptCopyAskUserTask**：agent 在 Download 里找到了唯一符合条件的 invoice_2025_001.pdf，但题目没有说明
-  “专门收录发票的文件夹”叫什么、在哪，它就此停下，说不知道该复制到哪里；
-  评测器检查到目标文件夹 Documents/expense/invoice 不存在，判 0 分。
+- **CheckInvoiceTask1**：题目要求按“付款比到期日晚 45 天”重新计算应付总额。agent 读到发票总额 104,673.00、
+  到期日 2025 年 10 月 4 日，按发票上 1.5% 的月滞纳利率折算后回答 105458.05；评测器的期望值是 104417.7，判 0 分。
+- **InvoiceReceiptCopyAskUserTask**：agent 在 Download 里只找到一个符合条件的文件 invoice_2025_001.pdf，
+  把它复制进了 Documents/expense/invoice；评测器期望这个文件夹里有 2 个文件，实际只有 1 个，判 0 分。
 
 ## WebArena-Verified（Shopping / Shopping Admin）：10 条抽样，9 条通过、1 条失败
 
