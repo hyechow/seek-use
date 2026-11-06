@@ -1,4 +1,4 @@
-# dpsk-computer-use
+# dpsk-cua
 
 **一段话交代，它在你的屏幕上把事做完。**
 
@@ -48,7 +48,7 @@ https://github.com/user-attachments/assets/2726f63b-eeec-4f23-b9e0-c69c1f086be6
 
 ## 为什么便宜的模型也能做对
 
-flash 模型也会点错、看错、自作主张。dpsk-computer-use 不赌模型每一步都对，而是让每一步都经过检查：
+flash 模型也会点错、看错、自作主张。dpsk-cua 不赌模型每一步都对，而是让每一步都经过检查：
 
 **规划 → 提议动作 → 校验、执行、设备确认 → 前后截图对比验证**
 
@@ -82,12 +82,12 @@ MobileWorld 成绩已收录在 [MobileWorld 榜单](https://github.com/Tongyi-MA
 
 ## 安装和使用
 
-dpsk-computer-use 是一个本地 MCP 服务（命令和服务名都叫 `seek-use`），界面操作在你的电脑上运行，模型服务由你自己配置，截图只发给你配置的模型服务。
+dpsk-cua 是一个本地 MCP 服务（命令和服务名都叫 `seek-use`），界面操作在你的电脑上运行，模型服务由你自己配置，截图只发给你配置的模型服务。
 
 **1. 安装。** 需要 [uv](https://docs.astral.sh/uv/getting-started/installation/)，Python 3.11 由 uv 自动准备：
 
 ```sh
-uv tool install --python 3.11 "seek-use[browser] @ https://github.com/hyechow/dpsk-computer-use/releases/download/v0.1.0a1/seek_use-0.1.0a1-cp311-cp311-macosx_11_0_arm64.whl"
+uv tool install --python 3.11 "seek-use[browser] @ https://github.com/hyechow/dpsk-cua/releases/download/v0.1.0a1/seek_use-0.1.0a1-cp311-cp311-macosx_11_0_arm64.whl"
 uvx --from playwright==1.60.0 playwright install chromium
 ```
 
