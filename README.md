@@ -30,16 +30,19 @@ https://github.com/user-attachments/assets/2726f63b-eeec-4f23-b9e0-c69c1f086be6
 开头视频就是一例：在 Chrome 登录网站，到 iPhone 短信取验证码，截图后发到 Mac 微信。
 也能在 iPhone 上跨 App 查信息，比如从小红书找书店合集，再到大众点评查评分和人均。
 
-**后台静默**适合可以交出去慢慢跑的事：在 Android 上跨 App 搜同一款商品比价，在浏览器里登录、过验证码、
-处理电商网站的前台和管理后台（WebArena-Verified 的 Hard 题）。
+**后台静默**适合可以交出去慢慢跑的事：在 Android 上跨 App 搜同一款商品比价，在浏览器里下五子棋、
+到商品后台逐件填表上架新品，也能处理电商网站的前台和管理后台（WebArena-Verified<table align="center">
+  <tr>
+    <td align="center" valign="top" rowspan="2"><b>前台 · iPhone</b><br><sub>小红书找书店，大众点评查评分</sub><br><img src="docs/assets/example-iphone.gif" width="190" alt="前台接管示例：iPhone 上小红书找书店，大众点评查评分"></td>
+    <td align="center" valign="top" rowspan="2"><b>后台 · Android</b><br><sub>三个购物 App 比价</sub><br><img src="docs/assets/example-android.gif" width="190" alt="后台静默示例：Android 上三个购物 App 比价"></td>
+    <td align="center" valign="top"><b>后台 · 浏览器</b><br><sub>通关简单难度的五子棋</sub><br><img src="docs/assets/example-gomoku.gif" width="320" alt="后台静默示例：浏览器里和电脑下五子棋并获胜"></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><b>后台 · 浏览器</b><br><sub>在商品后台上架两件新品</sub><br><img src="docs/assets/example-shop-admin.gif" width="320" alt="后台静默示例：浏览器里在商品后台填表上架两件新品"></td>
+  </tr>
+</table>
 
-| **前台 · iPhone**：小红书找书店，大众点评查评分 | **后台 · Android**：三个购物 App 比价 |
-| --- | --- |
-| <img src="docs/assets/example-iphone.gif" width="220" alt="前台接管示例：iPhone 上小红书找书店，大众点评查评分"> | <img src="docs/assets/example-android.gif" width="220" alt="后台静默示例：Android 上三个购物 App 比价"> |
-
-| **后台 · 浏览器**：按顺序点字验证码 | **后台 · 浏览器**：多选图片验证码 |
-| --- | --- |
-| <img src="docs/assets/example-captcha-order.gif" width="410" alt="后台静默示例：浏览器登录并通过按顺序点字验证码"> | <img src="docs/assets/example-captcha-select.gif" width="410" alt="后台静默示例：浏览器登录并通过多选图片验证码"> |
+多选图片验证码"> |
 
 以上都是真实运行的回放，每一帧是一步操作，底部文字是模型自己写的这一步说明。
 
