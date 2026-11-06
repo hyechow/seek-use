@@ -42,7 +42,6 @@ https://github.com/user-attachments/assets/2726f63b-eeec-4f23-b9e0-c69c1f086be6
 | <img src="docs/assets/example-captcha-order.gif" width="330" alt="后台静默示例：浏览器登录并通过按顺序点字验证码"> | <img src="docs/assets/example-captcha-select.gif" width="330" alt="后台静默示例：浏览器登录并通过多选图片验证码"> |
 
 以上都是真实运行的回放，每一帧是一步操作，底部文字是模型自己写的这一步说明。
-更多运行和基准成绩的合集见[这段视频](https://github.com/user-attachments/assets/5981825e-e039-445a-910e-c8076bb05c5c)。
 
 ## 为什么便宜的模型也能做对
 
