@@ -7,7 +7,7 @@
 
 > 目前支持 Apple Silicon Mac，见[安装和使用](#安装和使用)。
 
-<!-- TODO: 在 GitHub 网页编辑 README 时拖入 seek-use-promo/footage/bigmodel_login_wechat_demo_20261104_highlight_2min.mp4，用生成的 user-attachments 链接替换这一行 -->
+https://github.com/user-attachments/assets/2726f63b-eeec-4f23-b9e0-c69c1f086be6
 
 <sub>视频里的任务只有一段话：在 Chrome 登录智谱 BigModel → 到 iPhone 短信里读验证码填回去 → 截图账户余额 → 发到 Mac 微信的「文件传输助手」。
 原速 7 分 58 秒，在 3 个应用之间切换，33 步操作，0 次人工干预（视频为加速剪辑）。</sub>
