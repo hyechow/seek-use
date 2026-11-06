@@ -2,8 +2,9 @@
 
 **一段话交代，它在你的屏幕上把事做完。**
 
-通用的 Computer Use Agent。它像人一样看屏幕、用鼠标和键盘操作：不需要应用开放接口，也不用为每个应用单独适配，
-一次任务可以跨好几个应用、跨电脑和手机。用便宜的 DeepSeek V4.1 Flash 就能跑通。
+通用的 Computer Use Agent。它像人一样看屏幕、点击和输入：不需要应用开放接口，也不用为每个应用单独适配，
+一次任务可以跨好几个应用、跨电脑和手机。它有两种模式：**前台接管**你的电脑，或在**后台静默**完成。
+用便宜的 DeepSeek V4.1 Flash 就能跑通。
 
 > 目前支持 Apple Silicon Mac，见[安装和使用](#安装和使用)。
 
@@ -14,29 +15,34 @@ https://github.com/user-attachments/assets/2726f63b-eeec-4f23-b9e0-c69c1f086be6
 
 **MobileWorld 官方榜 77.78%（GUI-only 总榜第二、Agentic 类第一）· WebArena-Verified Hard 集 88.3%**，全程只用 DeepSeek V4.1 Flash。
 
-## 它能做什么
+## 两种模式
 
-把你平时要亲手点完的事交给它，不用告诉它按钮在哪：
+把你平时要亲手点完的事交给它，不用告诉它按钮在哪。按要操作的地方，任务以两种模式之一运行：
 
-| 任务类型 | 真实运行 |
+| | 前台接管 | 后台静默 |
+| --- | --- | --- |
+| **操作什么** | Mac 上的应用窗口；iPhone（通过 iPhone 镜像） | 独立的浏览器；Android 真机或模拟器 |
+| **怎么操作** | 用你真实的鼠标和键盘 | 不碰你的鼠标键盘，也不占你的屏幕 |
+| **运行时** | 别动电脑，屏幕上的光标和气泡显示它在做什么 | 你照常做自己的事 |
+| **要准备** | 屏幕录制和辅助功能权限 | 浏览器不用准备；Android 打开无线调试 |
+
+**前台接管**适合只能在你自己电脑上办的事：用你已经登录的应用，在几个应用之间来回切换。
+开头视频就是一例：在 Chrome 登录网站，到 iPhone 短信取验证码，截图后发到 Mac 微信。
+也能在 iPhone 上跨 App 查信息，比如从小红书找书店合集，再到大众点评查评分和人均。
+
+**后台静默**适合可以交出去慢慢跑的事：在 Android 上跨 App 搜同一款商品比价，在浏览器里登录、过验证码、
+处理电商网站的前台和管理后台（WebArena-Verified 的 Hard 题）。
+
+| **前台 · iPhone**：小红书找书店，大众点评查评分 | **后台 · Android**：三个购物 App 比价 |
 | --- | --- |
-| **跨应用办完一件事** | 登录网站、到手机短信取验证码、截图、发微信（上方视频） |
-| **跨 App 查信息、做比较** | Android：在京东、淘宝、拼多多搜同一款水比价；iPhone：从小红书找书店合集，再到大众点评查评分和人均 |
-| **过验证码** | 按提示顺序点字、多选图片格子 |
-| **网页前台与后台** | WebArena-Verified 电商前台和管理后台的 Hard 题 |
+| <img src="docs/assets/example-iphone.gif" width="330" alt="前台接管示例：iPhone 上小红书找书店，大众点评查评分"> | <img src="docs/assets/example-android.gif" width="330" alt="后台静默示例：Android 上三个购物 App 比价"> |
 
-| **Android**：三个购物 App 比价 | **iPhone**：小红书找书店，大众点评查评分 |
+| **后台 · 浏览器**：按顺序点字验证码 | **后台 · 浏览器**：多选图片验证码 |
 | --- | --- |
-| <img src="docs/assets/example-android.gif" width="330" alt="Android 示例：三个购物 App 比价"> | <img src="docs/assets/example-iphone.gif" width="330" alt="iPhone 示例：小红书找书店，大众点评查评分"> |
-
-| **按顺序点字验证码** | **多选图片验证码** |
-| --- | --- |
-| <img src="docs/assets/example-captcha-order.gif" width="330" alt="Browser 示例：登录并通过按顺序点字验证码"> | <img src="docs/assets/example-captcha-select.gif" width="330" alt="Browser 示例：登录并通过多选图片验证码"> |
+| <img src="docs/assets/example-captcha-order.gif" width="330" alt="后台静默示例：浏览器登录并通过按顺序点字验证码"> | <img src="docs/assets/example-captcha-select.gif" width="330" alt="后台静默示例：浏览器登录并通过多选图片验证码"> |
 
 以上都是真实运行的回放，每一帧是一步操作，底部文字是模型自己写的这一步说明。
-Browser、Android、iPhone 和基准成绩的合集见[这段视频](https://github.com/user-attachments/assets/5981825e-e039-445a-910e-c8076bb05c5c)。
-
-能操作的界面：**Mac 上的应用窗口 · 浏览器 · Android 真机或模拟器 · iPhone（通过 iPhone 镜像）**。
+更多运行和基准成绩的合集见[这段视频](https://github.com/user-attachments/assets/5981825e-e039-445a-910e-c8076bb05c5c)。
 
 ## 为什么便宜的模型也能做对
 
@@ -64,14 +70,13 @@ MobileWorld 的成绩由官方用我们上传的全部轨迹复现，收录在 [
 
 ## 看得见、停得下、查得到
 
-- **看得见**：在 Mac 上运行时，屏幕上有动作光标、窗口光晕和状态气泡，实时显示它在想什么、要点哪里。
-- **停得下**：随时按 Esc、点菜单栏图标或面板上的「停止」结束任务。
+- **看得见**：前台接管时，屏幕上有动作光标、窗口光晕和状态气泡，实时显示它在想什么、要点哪里。
+- **停得下**：随时按 Esc、点菜单栏图标或面板上的「停止」结束任务，也可以直接让宿主取消。
 - **查得到**：每次运行都记录模型调用、实际动作和截图，有运行记录页和逐步回放。
 
 ## 目前的局限
 
 - **不算快**：每一步都要观察、规划和检查，通常几秒一步，长任务要几分钟。
-- **占用前台**：操作 Mac 应用和 iPhone 镜像用的是真实的鼠标键盘，运行期间别去动它们；浏览器默认在后台的 headless Chromium 里运行。
 - **精细识别不保证一次对**：小字、扭曲的验证码可能读错，读错后会重试。
 - **只有 Mac 版**：安装包目前只支持 Apple Silicon Mac（M 系列芯片）。
 
@@ -145,7 +150,7 @@ seek-use check browser
 
 > 使用 seek-use，在独立浏览器中查询北京今天的天气。
 
-操作 Mac 应用窗口或 iPhone 镜像时，要在「系统设置 → 隐私与安全性」里给运行 seek-use 的应用（终端或宿主应用）
+第一次用前台接管之前，要在「系统设置 → 隐私与安全性」里给运行 seek-use 的应用（终端或宿主应用）
 打开**屏幕录制**和**辅助功能**权限，`seek-use check macos` 会告诉你缺哪一项。
 
 ## 许可证
