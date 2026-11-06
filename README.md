@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/2726f63b-eeec-4f23-b9e0-c69c1f086be6
 <sub>视频里的任务只有一段话：在 Chrome 登录智谱 BigModel → 到 iPhone 短信里读验证码填回去 → 截图账户余额 → 发到 Mac 微信的「文件传输助手」。
 原速 7 分 58 秒，在 3 个应用之间切换，33 步操作，0 次人工干预（视频为加速剪辑）。</sub>
 
-**MobileWorld 官方榜 77.78%（GUI-only 总榜第二、Agentic 类第一）· WebArena-Verified Hard 集 88.3%**，全程只用 DeepSeek V4.1 Flash。
+**MobileWorld 官方榜 77.78%（GUI-only 总榜第二）· WebArena-Verified Hard 集 88.3%**，全程只用 DeepSeek V4.1 Flash。
 
 ## 两种模式
 
@@ -63,9 +63,7 @@ flash 模型也会点错、看错、自作主张。dpsk-computer-use 不赌模�
 | MobileWorld | Android，GUI-only 子集 | **91/117（77.78%）**，[已上官方榜单](https://github.com/Tongyi-MAI/MobileWorld/issues/68) |
 | WebArena-Verified | Shopping / Shopping Admin，Hard 集 | **98/111（88.3%）** |
 
-MobileWorld 的成绩由官方用我们上传的全部轨迹复现，收录在 [MobileWorld 榜单](https://github.com/Tongyi-MAI/MobileWorld)，
-目前在 GUI-only 总榜排第二、Agentic 类第一。预算按规划轮次计（每题 10 到 75 轮不等），GUI 动作次数不设上限，
-一轮规划里可以有多次 GUI 动作。
+MobileWorld 成绩已收录在 [MobileWorld 榜单](https://github.com/Tongyi-MAI/MobileWorld)，GUI-only 总榜第二。
 两个基准各抽样 10 条运行轨迹的回放和官方评分见 [benchmarks/](benchmarks/README.md)。
 
 ## 看得见、停得下、查得到
